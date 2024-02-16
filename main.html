@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="main">
+        <div class="encriptador">
+
+        <h1 class="encriptador_logo" ><img class="logo" src="img/Logo.svg" alt=""></h1>
+
+        <section class="seccion_texto">
+            <form  class="text_form">
+            
+            <textarea class="contenedor_text textarea" type="text" placeholder="Ingrese el texto aqui"></textarea>
+
+            <div class="advertencia">
+                <img class="vector" src="img/Vector.svg" alt="alert">
+                <p class="adver">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="campo_botones">
+                <a id="boton" class="btn_encriptar" type="button" value="Encriptar"><span class="boton_span boton_span-encriptar">Encriptar</span></a>
+                <a id="boton" class="btn_desencriptar" type="button" value="Desencriptar"><span class="boton_span boton_span-desencriptar">Desencriptar</span></a>
+            </div>
+            </form>
+        </section>
+
+        <section class="seccion_mensaje">
+        <form class="mensaje_form" action="">
+            
+            <div class="mensaje_text" >
+                <textarea class="mensaje_area textarea" name="tArea" id="tArea" cols="" rows=""></textarea>
+                <a id="boton" class="btn_copiar" type="button" value="Copiar"><span class="boton_span boton_span-copiar">Copiar</span></a>
+            </div>
+
+            <div class="sec_parrafo">
+                <img class="cat" src="img/music-18.png" alt="gato">
+                <p class="par_1">Ningún mensaje fue encontrado.</p>
+                <p class="par_2">Ingrese el texto que desea encriptar o desencriptar.</p>
+            </div>
+
+        </form>
+        </section>
+    </div>    
+    </main>
+
+</body>
+
+<script src="app.js"></script>
+</html>

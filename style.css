@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --naranja: #FE6A2C;
+    --fondo: #0391A1;
+    --amarillo: #f8ed87;
+    --blanco: #f8c4cb
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background: var(--blanco);
+    height: 100vh;
+}
+
+#boton{
+    height: 75px;
+    width: 328px;
+    background-color: #000000;
+}
+
+.boton_span{
+    line-height: 60px;
+    height: 75px;
+    width: 328px;
+    font-size: 25px;
+    border: 4px solid #000000;
+    display: flex;
+    justify-content: center;
+    transform: translate(-0.5rem,-0.5rem);
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.boton_span:hover{
+    transform: translate(0,-0);
+    cursor: pointer;
+}
+
+.textarea{
+    resize: none;
+    border: none;
+}
+
+.textarea:focus{
+    outline: none;
+}
+
+.main{
+    width: 1350px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-right: 55px;
+}
+
+.encriptador{
+    display: flex;
+    justify-content: space-around;
+    height: 96%;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.seccion_texto{
+    height: 90%;
+    align-self: center;
+}
+
+.text_form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 50px;
+}
+
+
+.contenedor_text{
+    height: 80%;
+    padding: 10px;
+    font-size: 32px;
+    line-height: 150%;
+    background: #f3f5fc;
+    border: 4px solid #000000;
+    box-shadow: 15px 15px 0px -5px #000000;
+}
+
+.contenedor_text::placeholder{
+    color: #0f52a5;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.advertencia{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.vector{
+    position: absolute;
+    left: 227px;
+}
+
+.adver{
+    position: absolute;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    left: 250px;
+}
+
+.campo_botones{
+    display: flex;
+    gap: 20px;
+}
+
+
+.boton_span-encriptar{
+    background: var(--naranja);
+    color: #ffffff;
+}
+
+.boton_span-desencriptar{
+    background: var(--fondo);
+    color: #ffffff;
+}
+
+
+.cat{
+    width: 300px;
+    height: 270px;
+    padding-left: 50px;
+}
+
+/* seccion mensaje */
+
+
+.seccion_mensaje{
+    height: 90%;
+    width: 400px;
+    align-self: center;
+    background-color: var(--amarillo);
+    border: 4px solid #000000;
+    box-shadow: 15px 15px 0px -5px #000000;
+}
+.mensaje_form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.mensaje_text{
+    background-color: inherit;
+    height: 100px;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    row-gap: 25px;
+}
+
+.mensaje_area{
+    height: 90%;
+    width: 350px;
+    margin: 50px;
+    font-size: 24px;
+    line-height: 150%;
+    padding: 30px;
+    padding-bottom: 250px;
+}
+
+.boton_span-copiar{
+    background-color: #f1e7d1;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.sec_parrafo{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    background-color: #f3f5fc;
+}
+
+.par_1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.par_2{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+
+@media (max-width: 1024px){
+    .main{
+        width: 100vw;
+    }
+
+    .encriptador{
+        height: 90%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo{
+        align-self: flex-start;
+    }
+
+    .seccion_texto{
+        width: 90%;
+        height: 40%;
+    }
+
+    .text_form{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .campo_botones{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .seccion_mensaje{
+        width: 90%;
+        height: 30%;
+    }
+
+    .seccion_mensaje__boton{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .sec_parrafo{
+        width: 100%;
+    }
+
+    .cat{
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .main{
+            height: 100%;
+
+        }
+
+        .encriptador{
+            height: 100%;
+        }
+
+        .seccion_texto{
+            width: 80px;
+            height: 80vh;
+        }
+
+        .campo_botones{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .seccion_mensaje{
+            width: 80%;
+            height: 40vh;
+        }
+    }
+}
+
+
+
+
